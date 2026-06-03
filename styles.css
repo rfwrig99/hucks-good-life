@@ -1,0 +1,248 @@
+:root {
+  --navy: #061a34;
+  --pink: #e83f87;
+  --teal: #008f9c;
+  --sunset: #ffb36b;
+  --cream: #fff2df;
+  --sand: #f7d7b0;
+  --dark: #070914;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--navy);
+  background: linear-gradient(180deg, #fff0de 0%, #ffd4b7 45%, #f7fbff 100%);
+}
+
+img { max-width: 100%; display: block; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 18px 6vw;
+  background: rgba(255, 242, 223, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(6, 26, 52, 0.12);
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--navy);
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.brand span {
+  color: var(--pink);
+  font-style: italic;
+  letter-spacing: 0;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.hero {
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 42px;
+  align-items: center;
+  padding: 70px 6vw;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(232, 63, 135, 0.23), transparent 30%),
+    radial-gradient(circle at 85% 35%, rgba(0, 143, 156, 0.18), transparent 32%);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--teal);
+  font-weight: 900;
+  margin: 0 0 10px;
+}
+
+h1, h2, h3 { margin: 0; line-height: 0.95; }
+
+h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+h2 {
+  font-size: clamp(2.3rem, 5vw, 4.8rem);
+  letter-spacing: -2px;
+}
+
+.script {
+  color: var(--pink);
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  font-style: italic;
+  font-weight: 800;
+  margin: 10px 0 22px;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 620px;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 900;
+  border: 2px solid var(--navy);
+}
+
+.primary {
+  background: var(--pink);
+  color: white;
+  border-color: var(--pink);
+}
+
+.secondary {
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.hero-image img, .wide-image, .card, .story-image img {
+  border-radius: 28px;
+  box-shadow: 0 26px 70px rgba(6, 26, 52, 0.28);
+}
+
+.feature-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 0 6vw 70px;
+}
+
+.feature-row div {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(6, 26, 52, 0.12);
+  padding: 24px;
+  border-radius: 22px;
+}
+
+.feature-row strong {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.section {
+  padding: 80px 6vw;
+}
+
+.section-heading {
+  max-width: 860px;
+  margin-bottom: 34px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  overflow: hidden;
+  background: var(--cream);
+}
+
+.card-copy {
+  padding: 24px;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.tag {
+  color: var(--pink);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+}
+
+.story-section {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 42px;
+  align-items: center;
+  padding: 90px 6vw;
+  background: linear-gradient(135deg, rgba(0,143,156,0.15), rgba(232,63,135,0.14));
+}
+
+.story-copy p:not(.eyebrow), .contact p, .section-heading p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.dark {
+  color: white;
+  background:
+    radial-gradient(circle at 20% 25%, rgba(232, 63, 135, 0.26), transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(0, 143, 156, 0.28), transparent 30%),
+    var(--dark);
+}
+
+.contact {
+  text-align: center;
+  padding: 100px 6vw;
+  background: var(--cream);
+}
+
+.contact .button { margin-top: 18px; }
+
+footer {
+  padding: 28px 6vw;
+  background: var(--navy);
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero, .story-section, .feature-row, .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  h1 { letter-spacing: -1px; }
+}
