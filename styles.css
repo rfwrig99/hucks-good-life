@@ -92,6 +92,10 @@ h1 {
   letter-spacing: -3px;
 }
 
+.hero h1 span {
+  display: block;
+}
+
 h2 {
   font-size: clamp(1.3rem, 4vw, 3.8rem);
   letter-spacing: -2px;
