@@ -237,10 +237,18 @@ footer {
   text-align: center;
 }
 
+.mobile-break {
+  display: inline;
+}
+
 @media (max-width: 900px) {
   .hero, .story-section, .feature-row, .cards {
     grid-template-columns: 1fr;
   }
+  .mobile-break {
+    display: block;
+  }
+}
 
   .site-header {
     align-items: flex-start;
