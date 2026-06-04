@@ -250,5 +250,7 @@ footer {
     flex-direction: column;
   }
 
-  h1 { letter-spacing: -3px; }
+  h1 { letter-spacing: -1px;
+     font-size: 0.8rem;
+     }
 }
