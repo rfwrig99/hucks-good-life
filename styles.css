@@ -94,6 +94,11 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  font-size: clamp(1.3rem, 4vw, 3.8rem);
+  letter-spacing: -2px;
+}
+
 .script {
   color: var(--pink);
   font-size: clamp(2rem, 5vw, 4.2rem);
