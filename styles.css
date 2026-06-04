@@ -210,6 +210,9 @@ h2 {
   font-size: 1.15rem;
   line-height: 1.7;
 }
+.story-copy p:not(.eyebrow) {
+  text-align: center;
+}
 
 .dark {
   color: white;
