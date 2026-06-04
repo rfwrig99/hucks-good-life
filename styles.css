@@ -254,6 +254,7 @@ footer {
 
 .flip-card {
   background: transparent;
+  max-width: 260px;
   aspect-ratio: 3 / 4;
   perspective: 1000px;
 }
