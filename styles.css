@@ -323,7 +323,7 @@ footer {
   color: var(--pink);
 }
 
-.flip-instruction {
+.lineup-footer .flip-instruction {
   font-size: 1rem;
   color: var(--teal);
   font-style: italic;
