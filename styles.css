@@ -297,7 +297,7 @@ footer {
 }
 
 .flip-card-back {
-  background: var(--pink);
+  background: var(--sand);
   color: var(--navy);
   transform: rotateY(-180deg);
   display: flex;
