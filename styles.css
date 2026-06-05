@@ -318,8 +318,8 @@ footer {
     grid-template-columns: 1fr;
   }
   .flip-card {
-    max-width: 360px;
-    height: 520px;
+    max-width: 320px;
+    height: 580px;
     margin: 0 auto;
   }
   }
