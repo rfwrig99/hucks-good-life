@@ -323,6 +323,13 @@ footer {
   color: var(--pink);
 }
 
+.flip-instruction {
+  font-size: 1rem;
+  color: var(--teal);
+  font-style: italic;
+  opacity: 0.8;
+}
+
 @media (max-width: 900px) {
   .hero, .story-section, .feature-row, .cards {
     grid-template-columns: 1fr;
