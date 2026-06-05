@@ -299,8 +299,8 @@ footer {
 .flip-card-back {
   background: linear-gradient(
     180deg,
-    #FFF8EE 0%,
-    #F3E6CF 100%
+    #F5EEDC 0%,
+    #E8D6B8 100%
   );
   color: var(--navy);
   transform: rotateY(-180deg);
