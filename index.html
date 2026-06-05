@@ -171,5 +171,12 @@
   <footer>
     <p>© 2026 Huck’s Good Life. Live good. Drink good.</p>
   </footer>
+  <script>
+document.querySelectorAll('.flip-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});
+</script>
 </body>
 </html>
