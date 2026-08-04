@@ -168,6 +168,16 @@ h4 {
   border-radius: 22px;
 }
 
+.feature-row div:nth-child(4) {
+  grid-column: 1 / 2;
+  transform: translateX(50%);
+}
+
+.feature-row div:nth-child(5) {
+  grid-column: 2 / 3;
+  transform: translateX(50%);
+}
+
 .feature-row strong {
   display: block;
   text-transform: uppercase;
@@ -189,6 +199,16 @@ h4 {
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   justify-items: center;
+}
+
+.original-lineup {
+    grid-template-columns: minmax(320px, 420px);
+    justify-content: center;
+}
+
+.upcoming-lineup {
+    grid-template-columns: repeat(3, minmax(260px, 360px));
+    justify-content: center;
 }
 
 .card {
@@ -334,6 +354,12 @@ footer {
   .hero, .story-section, .feature-row, .cards {
     grid-template-columns: 1fr;
   }
+
+  .original-lineup,
+.upcoming-lineup {
+  grid-template-columns: 1fr;
+}
+
   .flip-card {
     max-width: 320px;
     height: 580px;
@@ -347,4 +373,4 @@ footer {
   }
 
   h1 { letter-spacing: -1px;}
-}
+
