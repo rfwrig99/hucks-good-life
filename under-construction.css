@@ -9,7 +9,7 @@ body {
 }
 
 body {
-    background: #fff2df
+    background: #fff2df;
 }
 
 .construction-page {
@@ -20,11 +20,35 @@ body {
     padding: 24px;
 }
 
-.construction-page img{
+.construction-page picture {
     display: block;
     width: 100%;
     max-width: 1400px;
+}
+
+.construction-page img {
+    display: block;
+    width: 100%;
     height: auto;
     border-radius: 24px;
     box-shadow: 0 20px 60px rgba(6, 26, 52, 0.22);
+}
+
+@media (max-width: 600px) {
+    .construction-page {
+        min-height: 100vh;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .construction-page picture {
+        max-width: none;
+    }
+
+    .construction-page img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+    }
 }
